@@ -1,9 +1,10 @@
 syntax = "proto3";
 
-option go_package = "github.com/rickalon/gRPCFastFoodOrderService/common/orders";
+option go_package = "github.com/rickalon/gRPCFastFoodOrderService/services/common/genproto/orders";
 
 service OrderService {
     rpc CreateOrder(CreateOrderRequest) returns (CreateOrderResponse){}
+    rpc GetOrders(GetOrdersRequest) returns (GetOrderResponse) {}
 }
 
 message Order{
